@@ -28,7 +28,7 @@ html{
 body{
     margin: 0;
     background-color: var(--background-color);
-    /* overflow-x: hidden; */
+    overflow-x: hidden;
 }
 body::-webkit-scrollbar{
     width: 0;
@@ -965,8 +965,5 @@ button:hover{
     }
     .list__footer li a{
         font-size: 12px;
-    }
-    span{
-        
     }
 }
