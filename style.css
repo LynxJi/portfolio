@@ -137,10 +137,9 @@ section{
     );
     filter: brightness(.70);
 }
-#cloud2{
+#cloud2 {
     position: relative;
-    transform: translate(-100px, -1160px
-    ) rotate(180deg);
+    transform: translate(-250px, -1115px ) rotate(180deg);
     filter: brightness(.4);
 }
 .hand{
