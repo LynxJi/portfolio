@@ -7,8 +7,10 @@ let content = document.getElementById('content');
 let tuong = document.getElementById('bg__about');
 const see__more = document.getElementById('see__more');
 const hide__off = document.getElementById('hide__off');
+const close = document.getElementById('close');
 const content__about = document.querySelector('.content__about');
 let me = document.getElementById('me');
+var header = document.getElementById('header');
 
 // parallax scroll
 window.addEventListener('scroll', function(){
@@ -30,7 +32,7 @@ hide__off.addEventListener('click', function(){
 // ----------------------------------------------------------------------------------------------------\
 
 ScrollReveal().reveal('.image',{
-    delay: 700,
+    delay: 400,
     distance: "60px",
     reset: true,
     origin: "right",
@@ -72,7 +74,7 @@ ScrollReveal().reveal('.des',{
     easing: 'cubic-bezier(0.5, 0, 0, 1)'
 });
 ScrollReveal().reveal('.see__more',{
-    delay: 1700,
+    delay: 1100,
     distance: "60px",
     reset: true,
     origin: "left",
@@ -107,7 +109,7 @@ ScrollReveal().reveal('#hide__off',{
     easing: 'cubic-bezier(0.5, 0, 0, 1)'
 });
 ScrollReveal().reveal('.service__h1',{
-    delay: 700,
+    delay: 400,
     distance: "60px",
     reset: true,
     origin: "left",
@@ -121,79 +123,77 @@ ScrollReveal().reveal('.service__h3',{
     easing: 'cubic-bezier(0.5, 0, 0, 1)'
 });
 ScrollReveal().reveal('#item1',{
-    delay: 1000,
+    delay: 700,
     distance: "60px",
     reset: true,
     origin: "bottom",
     easing: 'cubic-bezier(0.5, 0, 0, 1)'
 });
 ScrollReveal().reveal('#item2',{
-    delay: 1200,
+    delay: 900,
     distance: "60px",
     reset: true,
     origin: "bottom",
     easing: 'cubic-bezier(0.5, 0, 0, 1)'
 });
 ScrollReveal().reveal('#item3',{
-    delay: 1400,
+    delay: 1100,
     distance: "60px",
     reset: true,
     origin: "bottom",
     easing: 'cubic-bezier(0.5, 0, 0, 1)'
 });
-
-
 ScrollReveal().reveal('#skill1',{
-    delay: 800,
+    delay: 500,
     distance: "60px",
     reset: true,
     origin: "left",
     easing: 'cubic-bezier(0.5, 0, 0, 1)'
 });
 ScrollReveal().reveal('#skill2',{
-    delay: 1000,
+    delay: 700,
     distance: "60px",
     reset: true,
     origin: "right",
     easing: 'cubic-bezier(0.5, 0, 0, 1)'
 });
 ScrollReveal().reveal('#skill3',{
-    delay: 1200,
+    delay: 900,
     distance: "60px",
     reset: true,
     origin: "left",
     easing: 'cubic-bezier(0.5, 0, 0, 1)'
 });
 ScrollReveal().reveal('#skill4',{
-    delay: 1400,
+    delay: 1100,
     distance: "60px",
     reset: true,
     origin: "right",
     easing: 'cubic-bezier(0.5, 0, 0, 1)'
 });
 ScrollReveal().reveal('#skill5',{
-    delay: 1400,
+    delay: 1100,
     distance: "60px",
     reset: true,
     origin: "left",
     easing: 'cubic-bezier(0.5, 0, 0, 1)'
 });
 ScrollReveal().reveal('#skill6',{
-    delay: 1200,
+    delay: 900,
     distance: "60px",
     reset: true,
     origin: "right",
     easing: 'cubic-bezier(0.5, 0, 0, 1)'
 });
 ScrollReveal().reveal('#skill7',{
-    delay: 1000,
+    delay: 700,
     distance: "60px",
     reset: true,
     origin: "left",
     easing: 'cubic-bezier(0.5, 0, 0, 1)'
 });
 ScrollReveal().reveal('#skill8',{
-    delay: 800,
+    delay: 500,
     distance: "60px",
     reset: true,
     origin: "right",
@@ -203,30 +203,34 @@ ScrollReveal().reveal('#skill8',{
 
 
 ScrollReveal().reveal('#item__4',{
-    delay: 1400,
+    delay: 1100,
     distance: "60px",
     reset: true,
     scale : "0.5",
     easing: 'cubic-bezier(0.5, 0, 0, 1)'
 });
 ScrollReveal().reveal('#item__3',{
-    delay: 1200,
+    delay: 900,
     distance: "60px",
     reset: true,
     scale : "0.5",
     easing: 'cubic-bezier(0.5, 0, 0, 1)'
 });
 ScrollReveal().reveal('#item__2',{
-    delay: 1000,
+    delay: 700,
     distance: "60px",
     reset: true,
     scale : "0.5",
     easing: 'cubic-bezier(0.5, 0, 0, 1)'
 });
 ScrollReveal().reveal('#item__1',{
-    delay: 800,
+    delay: 500,
     distance: "60px",
     reset: true,
     scale : "0.5",
     easing: 'cubic-bezier(0.5, 0, 0, 1)'
+});
+
+close.addEventListener('click', function(){
+    close.classList.add("active2");
 });

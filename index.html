@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="https://unpkg.com/scrollreveal"></script>
+    <link rel="stylesheet" href="reponsive.css">
     <link rel="stylesheet" href="style.css">
     <title>Portfolio</title>
 </head>
@@ -15,7 +16,10 @@
             <div class="logo">
                 <img src="./images/logo.jpg" alt="!">
             </div>
+            <input type="checkbox" id="menu">
+            <label id="menu__label" for="menu"><i class="fa-solid fa-bars"></i></label>
             <ul class="list__header">
+                <label id="close" for="menu"><i class="fa-solid fa-xmark"></i></label>
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#service">Service</a></li>
@@ -150,14 +154,6 @@
                         <div class="name">React JS</div>
                         <div class="evaluate" style="--point:90%"></div>
                     </div>
-                    <div class="item" id="skill7">
-                        <div class="name">Vue JS</div>
-                        <div class="evaluate" style="--point:60%"></div>
-                    </div>
-                    <div class="item" id="skill8">
-                        <div class="name">Angular JS</div>
-                        <div class="evaluate" style="--point:70%"></div>
-                    </div>
                 </div>
         </section>
         <div id="contact">
@@ -215,9 +211,60 @@
             </div>
         </section>
         <!-- ------------------------------------------- -->
-        <footer>
-            
-        </footer>
+    </div>
+    <div class="footer">
+        <div class="header__footer">
+            <ul class="list__social">
+                <li><a href="https://www.facebook.com/KhacHieu257">
+                    <i class="fa-brands fa-facebook-f"></i>
+                </a>  
+                </li>
+                <li><a href="https://twitter.com/hian_dev">
+                    <i class="fa-brands fa-x-twitter"></i>
+                </a>  
+                </li>
+                <li><a href="">
+                    <i class="fa-brands fa-google"></i>
+                </a>  
+                </li>
+                <li><a href="https://www.instagram.com/_khac.hiu_257/">
+                    <i class="bi bi-instagram"></i>
+                </a>  
+                </li>
+                <li><a href="https://www.linkedin.com/in/bui-hieu-a0b04b280/">
+                    <i class="fa-brands fa-linkedin-in"></i>
+                </a>  
+                </li>
+                <li><a href="https://github.com/LynxJi">
+                    <i class="bi bi-github"></i>
+                </a>  
+                </li>
+            </ul>
+            <div class="send__email">
+                <label for="email__send">Send the feed back :</label>
+                <input type="email" name="email__send" id="input__email__footer" placeholder="Email address">
+                <button type="submit">Send email</button>
+            </div>
+        </div>
+        <div class="main__footer">
+            <div class="des__footer">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia temporibus nostrum suscipit laborum. Magni quae, dicta deserunt obcaecati voluptatibus autem iusto quaerat architecto numquam dolorum, eligendi nulla quibusdam! Voluptate, ex!</p>
+            </div>
+            <div class="link__footer">
+                <ul class="list__footer">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#service">Service</a></li>
+                    <li><a href="#skill">Skill</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="copyright__footer">
+            <span>
+                ©2023 Copyright HianDev.
+            </span>
+        </div>
     </div>
     <script src="./main.js"></script>
     <script src="https://unpkg.com/scrollreveal"></script>
