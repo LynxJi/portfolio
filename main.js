@@ -10,7 +10,7 @@ const hide__off = document.getElementById('hide__off');
 const close = document.getElementById('close');
 const content__about = document.querySelector('.content__about');
 let me = document.getElementById('me');
-var header = document.getElementById('header');
+let header = document.getElementById('header');
 
 // parallax scroll
 window.addEventListener('scroll', function(){
@@ -20,6 +20,7 @@ window.addEventListener('scroll', function(){
     hand2.style.marginTop = number * 4 + "px";
     cloud1.style.right = number * 4 + "px";
     cloud2.style.left = number * 4 + "px";
+
 });
 
 see__more.addEventListener('click', function(){
@@ -28,6 +29,18 @@ see__more.addEventListener('click', function(){
 hide__off.addEventListener('click', function(){
     content__about.classList.remove("active");
 });
+
+
+
+    window.addEventListener('scroll', function(){
+        if(window.scrollY > 0){
+            header.classList.add("background__header");
+        }else{
+            header.classList.remove("background__header");
+        }
+    });
+
+
 
 // ----------------------------------------------------------------------------------------------------\
 
