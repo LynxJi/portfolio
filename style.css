@@ -30,11 +30,12 @@ body{
     background-color: var(--background-color);
     overflow-x: hidden;
 }
+.container{
+    overflow-x: hidden;
+}
 body::-webkit-scrollbar{
     width: 0;
 }
-
-
 #header{
     width: 100vw;
     height: 150px;
@@ -164,8 +165,7 @@ section{
     justify-content: space-around;
     align-items: center;
     padding: 0 200px;
-    /* background: bac; */
-    position: relative;
+    position: relative; 
 }
 #about::after{
     content: "";
@@ -760,8 +760,8 @@ button:hover{
     }
 
     .logo{
-        width: 50px;
-        height: 50px;
+        width: 40px;
+        height: 40px;
     }
     .logo > img{
         object-fit: cover;
@@ -783,10 +783,20 @@ button:hover{
         transform: translateX(-100%);
         transition: .3s;
     }
+    #header{
+        height: 70px;
+        /* margin-top: 20px; */
+        transition: .3s;
+    }
+    #header.background__header{
+        background-color: #09231dba;
+        transition: .3s;
+    }
     header{
         display: flex;
         justify-content: space-around;
         align-items: center;
+        /* height: 1000px; */
         /* background-color: #00785c; */
     }
     header label i{
@@ -966,4 +976,5 @@ button:hover{
     .list__footer li a{
         font-size: 12px;
     }
+    /* end */
 }
