@@ -835,7 +835,7 @@ button:hover{
     }
     #cloud2 {
         position: relative;
-        transform: translate(-250px, -1090px ) rotate(180deg);
+        transform: translate(-250px, -1100px ) rotate(180deg);
         filter: brightness(.4);
     }
     #close:checked ~ .list__header{
