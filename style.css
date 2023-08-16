@@ -143,7 +143,7 @@ section{
 }
 #cloud2 {
     position: relative;
-    transform: translate(-250px, -1115px ) rotate(180deg);
+    transform: translate(-250px, -1215px ) rotate(180deg);
     filter: brightness(.4);
 }
 .hand{
@@ -1082,7 +1082,7 @@ button:hover{
         /* margin-left: 30px; */
         position: absolute;
         transform: translateX(650px);
-        transition: .18s ease;
+        transition: .20s ease;
         margin: 0;
         /* background-color: #00785c; */
         /* height: 450px; */
