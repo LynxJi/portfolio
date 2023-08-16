@@ -1311,6 +1311,12 @@ button:hover{
 }
 
 @media screen and (min-width: 1024px){
+
+    #cloud2 {
+    position: relative;
+    transform: translate(-250px, -1215px ) rotate(180deg);
+    filter: brightness(.4);
+    }
     #about{
         display: flex;
         justify-content: space-between;
