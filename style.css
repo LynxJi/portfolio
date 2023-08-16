@@ -1206,7 +1206,7 @@ button:hover{
     }
     #menu__label,
     #close{
-    display: none;
+    display: block;
 }
     #service{
         width: 80vw;
