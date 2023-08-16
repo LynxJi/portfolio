@@ -1005,18 +1005,19 @@ button:hover{
     #about{
         display: flex;
         flex-direction: column;
-        justify-content: center;
+        justify-content: space-between;
         align-items: center;
+        /* background-color: #00c2bd; */
     }
     .image{
         width: 250px;
         height: 250px;
         border-radius: 10px;
         position: relative;
-        top: 15px;
+        top: 100px;
     }
     .content__about{
-        /* background-color: #00c2bd; */
+        /* background-color: #7100c2; */
         width: 320px;
         height: 480px;
         overflow: hidden;
@@ -1256,8 +1257,6 @@ button:hover{
     #contact{
         height: max-content;
         margin: 30px 0px;
-    }
-    .list__contact{
     }
     .item__contact{
         display: flex;
